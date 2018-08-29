@@ -35,23 +35,36 @@ public class MainActivity extends AppCompatActivity {
                 int firstYears;
                 String sGender;
 
-                //String dobMonth = null;
+                String dobMonth = null;
 
-                /*switch (dobM) {
+                switch (dobM) {
                     case 1: dobMonth = "January";
+                            break;
                     case 2: dobMonth = "February";
+                            break;
                     case 3: dobMonth = "March";
+                            break;
                     case 4: dobMonth = "April";
+                            break;
                     case 5: dobMonth = "May";
+                            break;
                     case 6: dobMonth = "June";
+                            break;
                     case 7: dobMonth = "July";
+                            break;
                     case 8: dobMonth = "August";
+                            break;
                     case 9: dobMonth = "September";
+                            break;
                     case 10: dobMonth = "October";
+                            break;
                     case 11: dobMonth = "November";
+                            break;
                     case 12: dobMonth = "December";
+                            break;
+                    default: null;
                     break;
-                }*/
+                }
 
                 if (dobY < 30)
                     firstYears = 20;
@@ -64,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     sGender = "Male";
 
                 // result will be displayed here
-                tvResult.setText("Date of birth: "+ dobD + "/" + dobM + "/" + firstYears + dobY + "\n" +
+                tvResult.setText("Date of birth: "+ dobD + "/" + dobMonth + "/" + firstYears + dobY + "\n" +
                                     "Gender: " + sGender);
                 tvResult.setVisibility(View.VISIBLE);
             }
