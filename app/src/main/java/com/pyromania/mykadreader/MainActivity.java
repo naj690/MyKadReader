@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 int firstYears;
                 String sGender;
 
-                String dobMonth = null;
+                String dobMonth;
 
                 switch (dobM) {
                     case 1: dobMonth = "January";
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                             break;
                     case 12: dobMonth = "December";
                             break;
-                    default: null;
+                    default: dobMonth = "non valid value";
                     break;
                 }
 
